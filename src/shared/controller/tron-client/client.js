@@ -13,7 +13,7 @@ class TronClient {
       const config = {
         method: "get",
         maxBodyLength: Infinity,
-        url: `${this.tronRoute}walletsolidity/getnowblock`,
+        url: `http://3.225.171.164:8091/walletsolidity/getnowblock`,
         headers: {
           "Content-Type": "application/json",
           "TRON-PRO-API-KEY": Config.API_KEY,
@@ -66,7 +66,7 @@ class TronClient {
       const config = {
         method: "post",
         maxBodyLength: Infinity,
-        url: `${this.tronRoute}wallet/getblockbynum`,
+        url: `http://3.225.171.164:8090/wallet/getblockbynum`,
         headers: {
           "Content-Type": "application/json",
           "TRON-PRO-API-KEY": Config.API_KEY,
